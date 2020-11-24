@@ -2,9 +2,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 
-import json,requests
-import Executor as ex
-
+from executor import Executor
 
 
 
@@ -12,8 +10,10 @@ import Executor as ex
 def post_list(request):
 
     jsondata = request.body
-    
+    Executor(jsondata)
+
+        
     return HttpResponse("pong")
 
 
-ex.setData(jsondata)
+
