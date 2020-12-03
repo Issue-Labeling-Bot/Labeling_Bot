@@ -14,7 +14,6 @@ class Parser:
 
         Classifier(title, body)
 
-
         if label:
             label_existence = True
    
