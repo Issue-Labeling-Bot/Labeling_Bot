@@ -16,3 +16,6 @@ install:
 script: pytest
 virtualenv:
   system_site_packages: true
+env:
+  - DJANGO_VERSION=2.1.13
+  - DJANGO_VERSION=2.2.6
