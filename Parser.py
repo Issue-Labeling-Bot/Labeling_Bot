@@ -11,7 +11,11 @@ class Parser:
         body = issues['body']
         label = issues['labels']
         number = issues['number']
+<<<<<<< HEAD
         Classifier(title, body)
+=======
+
+>>>>>>> Classifier
 
         if label:
             label_existence = True

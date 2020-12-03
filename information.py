@@ -12,3 +12,13 @@ class Info:
 
     def getNumber(self):
         return self.issuenumber
+<<<<<<< HEAD
+=======
+
+    def getTitle(self):
+        return self.title
+
+    def getBody(self):
+        return self.body
+
+>>>>>>> Classifier
