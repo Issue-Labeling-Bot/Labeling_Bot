@@ -18,3 +18,6 @@ class Info:
 
     def getBody(self):
         return self.body
+
+    def getLabel_existence(self):
+        return self.label_existence
