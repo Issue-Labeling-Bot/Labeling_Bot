@@ -8,12 +8,10 @@ from executor import Executor
 
 @csrf_exempt
 def post_list(request):
-
     jsondata = request.body
-    Executor(jsondata)
-
-        
+##    Executor(jsondata)        
     return HttpResponse("pong")
 
 
 
+HttpResponse("hello world")
