@@ -1,1 +1,1 @@
-web: gunicorn Labeling_Bot:app --bind 0.0.0.0:${PORT}
+web: gunicorn Labeling_Bot:app --bind 0.0.0.0:8000
