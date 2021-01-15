@@ -5,11 +5,14 @@ from django.shortcuts import render
 from executor import Executor
 
 
-
 @csrf_exempt
 def post_list(request):
     jsondata = request.body
-    Executor(jsondata)        
-    return HttpResponse("pong")
+    if jsondata == b'':
+        return HttpResponse("pong")
+    else:
+        Executor(jsondata)
+        return HttpResponse("pong")
+    
 
 
