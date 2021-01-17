@@ -9,10 +9,10 @@ from executor import Executor
 def post_list(request):
     jsondata = request.body
     if jsondata == b'':
-        return HttpResponse("pong")
+        return HttpResponse("Server On _ No Issue")
     else:
         Executor(jsondata)
-        return HttpResponse("pong")
+        return HttpResponse("Server On _ Issue is cleared")
     
 
 
