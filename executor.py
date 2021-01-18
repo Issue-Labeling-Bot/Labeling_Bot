@@ -10,7 +10,7 @@ class Executor:
 
         info = Info(json_data)
         number = info.getNumber()
-        token='226e5d255cccfa18c305402f63e5d91d33082c3e'
+        token='d33dfa7b17ad5dc498fb51fbb4ccf8c11af70191'
 
         if self.isOpened(info) == True:
             if self.is_there_label(info) == False:
